@@ -1,10 +1,10 @@
 -- This file was automatically generated for the LuaDist project.
 
 package="luaprofiler"
-version="2.0.2-1"
+version="2.0.2-2"
 -- LuaDist source
 source = {
-  tag = "2.0.2-1",
+  tag = "2.0.2-2",
   url = "git://github.com/LuaDist-testing/luaprofiler.git"
 }
 -- Original source
@@ -33,5 +33,6 @@ build = {
       profiler = {
          sources = { "src/clocks.c", "src/core_profiler.c", "src/function_meter.c", "src/stack.c", "src/lua50_profiler.c" }
       }
-   }
+   },
+   install = { bin = { "src/analyzer/summary.lua" } }
 }
